@@ -1,0 +1,262 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.header{
+  position: fixed;
+  height: 65px;
+  width: 100%;
+  background: #091F21;
+  padding: 0px 0px 0px 0px ;
+  color: #fff;
+}
+.logo{
+  padding: 0px 0px 0px 100px;
+  line-height: 65px;
+  float: left;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+
+.menu{
+  padding: 0 25px;
+  float: right;
+  line-height: 65px;
+}
+.menu a{
+  color: aliceblue;
+  text-decoration: none;
+  padding: 0 12px;
+  transition: 0.4s;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: #3498db;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.content{
+  padding: 0 20px;
+}
+.content img{
+  width: 100%;
+  max-width: 700px;
+  margin: 20px 0;
+}
+.content p{
+  text-align: justify;
+}
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+}
+
+/*--------------------*/
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  }
+
+@media screen and (max-width: 300px) {
+  .signupbtn {
+    width: 100%;
+  }
+}
+  input[type=text], input[type=password], input[type=date], select {
+  width: 100%;
+  height: 40px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background: none;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=date]:focus, select:focus {
+  background-color: none;
+  outline: none;
+  border: 2px solid #24a7dc;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+select {
+  padding: 0px;
+}
+body {
+  background-image: url('Signup Wall.jpg');
+  background-size: 85% 85%;
+  background-repeat: no-repeat;
+}
+
+hr {
+  border: 1px solid #64b5f6;
+  margin-bottom: 35px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.signupbtn {
+  width: 15%;
+  float: right;
+  height: 38px;
+  background: #1e88e5;
+  transition: 0.5s;
+}
+.signupbtn:hover {
+  background: #2962ff;
+}
+.container {
+  width: 45%;
+  float: right;
+  margin: 20px 30px 0px 0px;
+}
+form {
+  background-color: #FFFF;
+  box-shadow: 2px 2px 8px 3px #888888;
+  padding: 20px;
+  height: 730px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  width: 100%;
+}
+.fn {
+  float: left;
+  padding-right: 10px;
+  width: 50%;
+}
+.ln {
+  float: left;
+  padding-left: 10px;
+  width: 50%;
+}
+.p {
+  float: left;
+  padding-right: 0px;
+  width: 100%;
+}
+#birthday-wrapper {
+  width: 50%;
+  float: left;
+  padding-right: 10px;
+}
+#gender-wrapper {
+  width: 50%;
+  float: left;
+  padding-left: 10px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#dOption1Check1, #dOption1Check2, #dOption1Check3, #dOption1Check4, #dOption1Check5, #dOption1Check6, #dOption1Check7, #dOption1Check8,
+#dOption1Check9, #dOption1Check10, #dOption1Check11, #dOption1Check12, #dOption1Check13 {
+  display: none;
+}
+#dOption2Check1, #dOption2Check2, #dOption2Check3, #dOption2Check4, #dOption2Check5, #dOption2Check6, #dOption2Check7, #dOption2Check8,
+#dOption2Check9, #dOption2Check10, #dOption2Check11{
+  display: none;
+}
+#dOption3Check1, #dOption3Check2, #dOption3Check3, #dOption3Check4 {
+  display: none;
+}
+#dOption4Check1, #dOption4Check2, #dOption4Check3, #dOption4Check4, #dOption4Check5, #dOption4Check6, #dOption4Check7, #dOption4Check8 {
+  display: none;
+}
+#dOption5Check1, #dOption5Check2, #dOption5Check3, #dOption5Check4, #dOption5Check5, #dOption5Check6, #dOption5Check7, #dOption5Check8,
+#dOption5Check9, #dOption5Check10 {
+  display: none;
+}
+
+#dOption6Check1, #dOption6Check2, #dOption6Check3, #dOption6Check4, #dOption6Check5, #dOption6Check6 {
+  display: none;
+}
+#dOption7Check1, #dOption7Check2, #dOption7Check3, #dOption7Check4 {
+  display: none;
+}
+#dOption8Check1, #dOption8Check2, #dOption8Check3, #dOption8Check4, #dOption8Check5, #dOption8Check6, #dOption8Check7, #dOption8Check8 {
+  display: none;
+}
+
+
+.division_wrapper {
+  float: left;
+  width: 50%;
+  padding-right: 10px;
+}
+.district_wrapper {
+  float: left;
+  width: 50%;
+  padding-left: 10px;
+}
+a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+form a:hover {
+  text-decoration: underline;
+}
